@@ -1,8 +1,8 @@
 # demo
 
-This project is to demostrate the ability to implement clean and semetic HTML markup. Also, it takes a modular approach to stylesheet(SASS) organization for re-usability and maintainability.
+This project is to demonstrate the ability to implement clean and sematic HTML markup. Also, it takes a modular approach to stylesheet(SASS) organization for re-usability and maintainability.
 
-It, however, has miniumm JavaScript functionality which is not the focus of the demo.
+It, however, has minimum JavaScript functionality which is not the focus of the demo.
 
 Tooling support for web development flow is done with gulp.  
 
