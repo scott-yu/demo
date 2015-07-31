@@ -9,9 +9,7 @@ gulp.task('sass', function () {
     return gulp.src(paths.sass)
         .pipe(plumber())
         .pipe(sass({
-            sourceComments: 'map',
-            sourceMap: 'sass',
-            style: 'compact'
+            outputStyle: 'compressed'
         }))
         .pipe(concatCss('app.css'))
         .pipe(gulp.dest(paths.root));

@@ -2,14 +2,14 @@
 
     var ACTIVE_CLASS = 'active';
 
-    var initPaginatedContentControl = function() {
-        $('.x-paginated-content')
+    var initPaginatedContentControl = function($container) {
+        $container
             .find('.x-index li').each(function(i, indexItem) {
                 $('a', indexItem).click(function(e) {
                     e.preventDefault();
 
                     toggleIndexLinkActive($(indexItem))
-                    toggleContentActive($(indexItem).index() + 1);
+                    toggleContentActive($container, $(indexItem).index() + 1);
                 })
             });
     }
@@ -20,8 +20,8 @@
             .removeClass(ACTIVE_CLASS);
     }
 
-    var toggleContentActive = function(index) {
-        $('.x-paginated-content .x-content article:nth-child(' + index + ')')
+    var toggleContentActive = function($container, index) {
+        $container.find('.x-content article:nth-child(' + index + ')')
             .addClass(ACTIVE_CLASS)
             .siblings()
             .removeClass(ACTIVE_CLASS);
@@ -29,7 +29,7 @@
 
 
     $(document).ready(function() {
-        initPaginatedContentControl();
+        initPaginatedContentControl($('.x-paginated-content'));
     });
 
 }());

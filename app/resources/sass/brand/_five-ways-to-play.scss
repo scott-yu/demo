@@ -8,7 +8,6 @@
     }
 
     p {
-        font-size: 14px;
         line-height: 1.8em;
     }
 
@@ -16,6 +15,7 @@
 
         .article-list article {
             display: none;
+            min-height: 200px;
         }
 
         .article-list article.active {
@@ -26,12 +26,14 @@
             display: flex;
             flex-flow: row nowrap;
             list-style-type: none;
+
             li {
                 width: 20%;
                 text-align: center;
 
                 a {
                     @extend .condensed-font;
+
                     color: white;
                     text-decoration: none;
                     width: 100%;
@@ -43,25 +45,15 @@
                 }
 
                 &.active a {
-                    border-bottom: 3px solid #f8cf03;
+                    border-bottom: 3px solid $brand-yellow;
                 }
             }
 
-            .index-speed {
-                background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-1.png);
-            }
-            .index-style {
-                background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-2.png);
-            }
-            .index-build {
-                background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-3.png);
-            }
-            .index-crew {
-                background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-4.png);
-            }
-            .index-outlaw {
-                background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-5.png);
-            }
+            .index-speed  { background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-1.png); }
+            .index-style  { background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-2.png); }
+            .index-build  { background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-3.png); }
+            .index-crew   { background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-4.png); }
+            .index-outlaw { background-image: url(http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-5.png); }
         }
     }
 }

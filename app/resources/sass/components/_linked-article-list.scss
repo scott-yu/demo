@@ -21,7 +21,6 @@
     }
 
     p {
-        font-size: 14px;
         line-height: 1.8em;
     }
 
@@ -29,7 +28,7 @@
         display: block;
         padding: 170px 16px 16px 16px;
 
-        background-size: calc(100% - 32px) auto;
+        background-size: 100% auto;
         background-position: top center;
         background-repeat: no-repeat;
 
@@ -58,6 +57,10 @@
                     background-color: $brand-yellow;
                 }
             }
+        }
+
+        article {
+            background-size: calc(100% - 32px) auto;
         }
     }
 }

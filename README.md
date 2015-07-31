@@ -4,7 +4,7 @@ This project is to demostrate the ability to implement clean and semetic HTML ma
 
 It, however, has miniumm JavaScript functionality which is not the focus of the demo.
 
-Also, it has the tooling support to kick off the development flow with gulp.  
+Tooling support for web development flow is done with gulp.  
 
 ## Installation
 
