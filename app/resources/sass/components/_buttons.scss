@@ -1,0 +1,31 @@
+.btn-callout {
+    @extend .condensed-font;
+
+    background-color: $brand-yellow;
+    color: black;
+    letter-spacing: -0.02em;
+    line-height: 48px;
+    min-width: 164px;
+    padding: 0 24px;
+    transition: all .3s ease-out;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.btn-link {
+    font-size: 14px;
+    color: white;
+    text-transform: none;
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .btn-callout {
+        display: inline-block;
+    }
+}

@@ -30,7 +30,7 @@ var createWatcher = function(name, glob, tasks, reloadBrowser) {
 }
 
 gulp.task('watch', ['build'], function () {
-    // createWatcher('js', paths.js, ['build-js', 'eslint'], true);
+    createWatcher('js', paths.js, [''], true);
     createWatcher('html', paths.html, [''], true);
     createWatcher('sass', paths.sass, ['sass'], false);
     createWatcher('css', paths.root + 'app.css', ['reloadCSS'], false);

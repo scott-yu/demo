@@ -1,0 +1,53 @@
+.page-navbar {
+    @extend .condensed-font;
+
+    background: black;
+    padding: 5px 10px;
+
+    .navbar-logo {
+        float: left;
+    }
+    .menu-list {
+        overflow: hidden;
+        list-style-type: none;
+        margin: 0;
+        padding: 5px;
+
+        li {
+            float: left;
+            display: none;
+
+            &:first-child {
+                display: block;
+                float: right;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .page-navbar {
+        background: transparent;
+        padding: 20px;
+
+        .menu-list {
+            padding: 10px;
+
+            li {
+                float: left;
+                display: block;
+
+                &:first-child {
+                    float: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,421 @@
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/_typography.scss */
+
+.condensed-font,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page-navbar,
+.hero-promotion .callout-block strong,
+.linked-article-list .date,
+.btn-callout,
+.five-ways-to-play .indexed-article-list .article-list-index li a {
+  font-family: din-condensed-web, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 7, /Users/scott.yu/Sites/demo/app/resources/sass/_typography.scss */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+/* line 13, /Users/scott.yu/Sites/demo/app/resources/sass/_typography.scss */
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -.96px;
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+.page-navbar {
+  background: black;
+  padding: 5px 10px;
+}
+
+/* line 7, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+.page-navbar .navbar-logo {
+  float: left;
+}
+
+/* line 10, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+.page-navbar .menu-list {
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+}
+
+/* line 16, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+.page-navbar .menu-list li {
+  float: left;
+  display: none;
+}
+
+/* line 20, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+.page-navbar .menu-list li:first-child {
+  display: block;
+  float: right;
+}
+
+/* line 25, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+.page-navbar .menu-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 36, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+  .page-navbar {
+    background: transparent;
+    padding: 20px;
+  }
+
+  /* line 40, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+  .page-navbar .menu-list {
+    padding: 10px;
+  }
+
+  /* line 43, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+  .page-navbar .menu-list li {
+    float: left;
+    display: block;
+  }
+
+  /* line 47, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-navbar.scss */
+
+  .page-navbar .menu-list li:first-child {
+    float: left;
+  }
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/components/_hero-promotion.scss */
+
+.hero-promotion {
+  text-align: center;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 7, /Users/scott.yu/Sites/demo/app/resources/sass/components/_hero-promotion.scss */
+
+.hero-promotion .callout-block {
+  color: white;
+  padding: 100px 20px 35px 20px;
+}
+
+/* line 11, /Users/scott.yu/Sites/demo/app/resources/sass/components/_hero-promotion.scss */
+
+.hero-promotion .callout-block strong {
+  display: block;
+  font-size: 24px;
+  letter-spacing: -.48px;
+}
+
+/* line 2, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list a {
+  text-decoration: none;
+}
+
+/* line 6, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list a:hover article:before {
+  background-color: transparent;
+}
+
+/* line 12, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list h3 {
+  font-size: 22px;
+  text-transform: none;
+  margin: 5px 0 10px 0;
+}
+
+/* line 18, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list .date {
+  text-transform: none;
+}
+
+/* line 23, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list p {
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+/* line 28, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list article {
+  display: block;
+  padding: 170px 16px 16px 16px;
+  background-size: calc(100% - 32px) auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* line 38, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+.linked-article-list article:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  position: relative;
+  top: -10px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 51, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+  .linked-article-list {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  /* line 57, /Users/scott.yu/Sites/demo/app/resources/sass/components/_linked-article-list.scss */
+
+  .linked-article-list a:hover article:before {
+    background-color: #f8cf03;
+  }
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-layout.scss */
+
+.center-page-content {
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 6, /Users/scott.yu/Sites/demo/app/resources/sass/components/_page-layout.scss */
+
+  .center-page-content {
+    padding: 0 calc((100% - 840px) / 2);
+  }
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/components/_buttons.scss */
+
+.btn-callout {
+  background-color: #f8cf03;
+  color: black;
+  letter-spacing: -0.02em;
+  line-height: 48px;
+  min-width: 164px;
+  padding: 0 24px;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+/* line 18, /Users/scott.yu/Sites/demo/app/resources/sass/components/_buttons.scss */
+
+.btn-link {
+  font-size: 14px;
+  color: white;
+  text-transform: none;
+  display: inline-block;
+  letter-spacing: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 28, /Users/scott.yu/Sites/demo/app/resources/sass/components/_buttons.scss */
+
+  .btn-callout {
+    display: inline-block;
+  }
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_logos.scss */
+
+.brand-logo {
+  width: 90px;
+  height: 25px;
+  background-image: url("//www.needforspeed.com/bundles/pulsenfs/dist/images/nfs-logo-blue.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  text-indent: -99999px;
+}
+
+/* line 13, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_logos.scss */
+
+.hero-promotion h1 {
+  width: 392px;
+  height: 167px;
+  background-image: url("//media-www-needforspeed.spark.ea.com/content/c-need-for-speed/en_US/_jcr_content/tout/foregroundImage.img.png");
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  display: inline-block;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 25, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_logos.scss */
+
+  .brand-logo {
+    width: 200px;
+    height: 52px;
+  }
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play {
+  background: linear-gradient(to bottom, #1d375f 0, #162a48 50%, #0f1c30 100%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 6, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play h2 {
+  margin: 10px 0;
+}
+
+/* line 10, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play p {
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+/* line 17, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list article {
+  display: none;
+}
+
+/* line 21, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list article.active {
+  display: block;
+}
+
+/* line 25, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+}
+
+/* line 29, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index li {
+  width: 20%;
+  text-align: center;
+}
+
+/* line 33, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index li a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding-top: 95px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* line 45, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index li.active a {
+  border-bottom: 3px solid #f8cf03;
+}
+
+/* line 50, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index .index-speed {
+  background-image: url("http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-1.png");
+}
+
+/* line 53, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index .index-style {
+  background-image: url("http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-2.png");
+}
+
+/* line 56, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index .index-build {
+  background-image: url("http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-3.png");
+}
+
+/* line 59, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index .index-crew {
+  background-image: url("http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-4.png");
+}
+
+/* line 62, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_five-ways-to-play.scss */
+
+.five-ways-to-play .indexed-article-list .article-list-index .index-outlaw {
+  background-image: url("http://www.needforspeed.com/bundles/pulsenfs/dist/images/5ways/icon-5.png");
+}
+
+/* line 1, /Users/scott.yu/Sites/demo/app/resources/sass/brand/_promotions.scss */
+
+.hero-promotion {
+  height: 600px;
+  background-image: url("http://media-www-needforspeed.spark.ea.com/content/c-need-for-speed/en_US/_jcr_content/tout/desktopBackground.img.jpg");
+}
+
+/* line 13, stdin */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+}
+
+/* line 23, stdin */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* line 31, stdin */
+
+aside {
+  position: absolute;
+  display: none;
+  z-index: 110;
+}
+
+/*# sourceMappingURL=sass */

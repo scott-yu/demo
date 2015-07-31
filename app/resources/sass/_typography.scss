@@ -1,0 +1,17 @@
+.condensed-font {
+    font-family: din-condensed-web, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @extend .condensed-font;
+
+    color: white;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -.96px;
+}

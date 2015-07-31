@@ -1,0 +1,63 @@
+.linked-article-list {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            article:before {
+                background-color: transparent;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 22px;
+        text-transform: none;
+        margin: 5px 0 10px 0;
+    }
+
+    .date {
+        @extend .condensed-font;
+        text-transform: none;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+
+    article {
+        display: block;
+        padding: 170px 16px 16px 16px;
+
+        background-size: calc(100% - 32px) auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        color: white;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            position: relative;
+            top: -10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .linked-article-list {
+        display: flex;
+        flex-flow: row nowrap;
+
+        a {
+            &:hover {
+                article:before {
+                    background-color: $brand-yellow;
+                }
+            }
+        }
+    }
+}

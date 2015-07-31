@@ -1,0 +1,9 @@
+.center-page-content {
+    padding: 0 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .center-page-content {
+        padding: 0 calc((100% - 840px) / 2);
+    }
+}

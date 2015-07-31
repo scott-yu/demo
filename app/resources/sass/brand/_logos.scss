@@ -1,0 +1,29 @@
+.brand-logo {
+    width: 90px;
+    height: 25px;
+    background-image: url(//www.needforspeed.com/bundles/pulsenfs/dist/images/nfs-logo-blue.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+    text-indent: -99999px;
+}
+
+
+.hero-promotion {
+    h1 {
+        width: 392px;
+        height: 167px;
+        background-image: url(//media-www-needforspeed.spark.ea.com/content/c-need-for-speed/en_US/_jcr_content/tout/foregroundImage.img.png);
+        background-repeat: no-repeat;
+        text-indent: -99999px;
+        display: inline-block;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .brand-logo {
+        width: 200px;
+        height: 52px;
+    }
+}
